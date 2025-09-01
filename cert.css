@@ -1,0 +1,88 @@
+        body{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+        #all {
+            height: 0;
+        }
+        #certno {
+            display: flex;
+            position: relative;
+            top: -790px;
+            left: 10px;
+            font-family: "Libertinus Serif Display";
+            font-weight: 550;
+            font-size: 16px;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        #mainimg {
+            /* width: 800px; */
+            height: 100dvh;
+            filter: grayscale(100%);
+        }
+        .main{
+            transform: scale(1.3);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            top: -560px;
+            left: 100px;
+            justify-content: center;
+            align-items: center;
+            width: 540px;
+            margin-left: 16px;
+        }
+        .main p{
+            margin: 0;
+            font-family: "Libertinus Serif Display";
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            font-style: italic;
+            color: #1b2e50;
+       
+        }
+        #name{
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-family: "Ephesis";
+            font-weight: 550;
+            font-size: 44px;
+        }
+        #printer{
+            margin-left: 8px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: sans-serif;
+            color: white;
+            background-color: #007bff; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        #printer:hover{
+            background-color: #0056b3; 
+        }
+        
+        #printer:active{
+            background-color: #004494; 
+        }
+@media print {
+    @page {
+        margin: 0;
+  }
+    #printer {
+        display: none;
+  }
+  img {
+    page-break-inside: avoid;
+  }
+}
